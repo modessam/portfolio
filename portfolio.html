@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+div{
+  text-align: center;
+}
+a{
+
+    padding: 0px 25px;
+    text-decoration: none;
+    color:black;
+    height: 100%;
+    font-size: 20px;
+    padding: 50px 25px 20px 25px;
+}
+body{    margin: 0px;
+}
+.nav-container{   
+    position: fixed; 
+    top:0;
+    width: 100%;
+    background-color: whitesmoke;
+    height: 90px;
+    display:flex;
+    z-index: 2;
+}
+.nav-container > div{
+    width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+  flex-wrap: wrap;
+  position: relative;
+
+}
+
+.link{
+   
+    flex-grow: 10;
+    align-self:stretch;
+}
+.logo{
+    flex-grow: 4;
+}
+
+img:hover{
+opacity: 0.5;
+}
+.social{cursor: pointer;}
+.dropimg {
+    display: none;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+#dropdown {
+    display:none;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+a:hover{
+    color: crimson;
+}
+
+
+#page
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#about-me{
+  margin: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+h{text-align: center;}
+#jp{opacity: 0.9; color: crimson;}
+.about{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+}
+#me{
+    flex-grow: 5 ;
+    padding:25px ;
+}
+span{
+    color: crimson;
+}
+.row {
+  display: flex;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 33.3333333%;
+  max-width: 33.3333333%;
+  padding: 20px 20px;
+}
+h{text-align: center;}
+.column img {
+  margin-top: 8px;
+    padding:25px ;
+  vertical-align: middle;
+}
+#work{
+  margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+}
+
+#contact{
+  display: flex;
+  align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;  
+}
+#footer{
+  width: 100%;
+  background-color: whitesmoke;
+}
+.icon{
+  flex: 33.333333%;
+  width: 33.333333%;
+  align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center; 
+    text-align: center; 
+}
+
+@media  (max-width:850px) {
+    #dropdown,.dropimg{
+        display: flex;
+        right: 0;
+    }
+    .row{
+      display: block;
+    }
+    .column 
+    {
+      max-width: 100%;
+      text-align: center;
+    }
+    .column img{
+      height: auto !important;
+      width: 80% !important;
+    }
+    
+    #dropdown:hover .dropdown-content {
+        width: 300px;
+        right: 0;
+        display: block;
+    }
+    #work{margin: 0;}
+    #contact{
+      flex-direction: column;
+    }
+    .about{flex-direction: column;}
+    .link{display: none;}
+}
+div h1{
+    text-align: center;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="logo"><img src="Logo_5.gif" alt="logo"></div>
+        <div class="link">
+         <a href="#home" >home</a>
+         <a href="#about-me">about</a>
+         <a href="#work" >work</a>
+         <a href="#contact" >contacts</a>
+        </div>
+        <div id="dropdown">
+            <img src="menu.png" alt="menu" class="dropimg">
+            <div class="dropdown-content">
+                <a href="#home" >home</a>
+                 <a href="#about">about</a>
+                 <a href="#work" >work</a>
+                 <a href="#contacts" >contacts</a>
+                 <div class="social">
+                    <img src="facebook-Icon.png" alt="facebook-Icon">
+                    <img src="Github-Icon.png" alt="github-Icon">
+                    <img src="Instagram-Icon.png" alt="instagram-Icon">
+                    <img src="Share-Icon.png" alt="Share-Icon">
+                    <img src="Twitter-Icon.png" alt="Twitter-Icon">
+                </div>
+            </div>
+          </div>
+              </div>
+        <div id="page">
+              <div id="home" >
+                  <img src="headerimage.jpg" alt="headerimg" style="width: 100%;opacity: 1; height: auto;">
+              </div>
+              <div id="about-me">
+                      <div>
+                          <h1 style=" color: crimson;">about me</h1>
+                      </div>
+                      <div class="about">
+                          <div id="me">
+                              <img src="IMG_20200812_140950_119.jpg" alt="me" style="opacity: 1; width: 250px;height: auto;">
+                        </div>
+                      <div id="info">
+                        <h4>Hi i'm </h4>
+                        <h2>MAHMOUD ESSAM</h2>
+                        <h3 id="jp">i'm a photographer </h3>
+                        <h3>country: <span>Egypt</span></h3>
+                        <h3>city: <span>El Qalubia</span></h3>
+                        <h3>Education: <span>studing communication and computer engineering at shoubra faculty of engineering </span></h3>
+                        <h3>work: <span>freelance photographer </span></h3>
+                     </div>
+                 </div>
+              </div>
+            
+              <div id="work">
+                  <div><h1 style="color: crimson;">some of my work</h1></div>
+              <div class="row"> 
+                <div class="column">
+                  <img src="images (5).jfif" style="width:100%;height: 300px;">
+                  <img src="images (6).jfif" style="width:100%;height: 300px;">
+                  <img src="images.jfif" style="width:100%;height: 300px;">
+                </div>
+                
+                <div class="column">
+                  <img src="images (2).jfif" style="width:100%;height: 300px;">
+                  <img src="images (3).jfif" style="width:100%;height: 300px;">
+                  <img src="images (4).jfif" style="width:100%;height: 300px;">
+                </div> 
+                 
+                <div class="column">
+                  <img src="d9de112b2c4aedef6df31d05194adf21.jpg" style="width:100%;height: 300px;">
+                  <img src="download (1).jfif" style="width:100%;height: 300px;">
+                  <img src="download.jfif" style="width:100%;height: 300px;">
+                </div>
+                
+              </div>
+              </div>
+              <div id="footer">
+              <h1>contact-us</h1>
+              <div id="contact">
+                <div class="icon">
+                  <img src="Facebook red check circle social media icon.png" alt="facebook-Icon">
+                  <div><p>email: <span>modessamm</span></p></div>
+                </div>
+                  <div class="icon">
+                    <img src="instagram red check circle social media icon.png" alt="instagram-Icon">
+                    <div><p>email: <span>mod_essam</span></p></div>
+                  </div>
+                <div class="icon">
+                  <img src="red check social media icon google plus.png" alt="google-icon">
+                  <div><p>email: <span>modessam02@gmail.com</span></p></div>
+                </div>
+              </div>
+         </div>
+        </div>
+</body>
+</html>
+
